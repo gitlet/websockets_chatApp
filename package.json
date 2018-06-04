@@ -1,0 +1,25 @@
+{
+  "name": "websockets",
+  "version": "1.0.0",
+  "description": "A simple chat app using Nodejs, Express, Sockets.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitlet/websockets_chatApp.git"
+  },
+  "author": "Abdullah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitlet/websockets_chatApp/issues"
+  },
+  "homepage": "https://github.com/gitlet/websockets_chatApp#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
