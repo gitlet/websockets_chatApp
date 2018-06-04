@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ChatterBox - chat app using WebSockets</title>
+  <title>FolksSpeak - chat app using WebSockets</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <!-- socket.io CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
   <!-- main.scss -->
@@ -12,8 +14,18 @@
 </head>
 <body>
   <header>
-    <h1>Pals<span>Talk</span></h1>
+    <h1>folks<span>Speak</span></h1>
   </header>
+  <div id="container">
+    <div id="chat-window">
+      <div id="output"></div>
+      <div id="feedback"></div>
+    </div>
+    <input type="text" name="" value="" placeholder="Handle" id="handle">
+    <input type="text" name="" value="" placeholder="Message" id="message">
+    <!-- <span><i class="fal fa-arrow-circle-right"></i></span> -->
+    <input type="submit" name="" value="Send" id="send">
+  </div>
 
   <!-- chat.js -->
   <script src="/chat.js" charset="utf-8"></script>

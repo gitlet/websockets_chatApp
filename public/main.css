@@ -52,8 +52,10 @@ table {
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,700');
 
 /* APP - LOCAL STYLES */
+* {box-sizing: border-box;}
 body {
   font-family: 'Cabin', sans-serif;
+	background-image: url('img/chat-bg.jpg');
 }
 body header {
 	background: rebeccapurple;
@@ -71,3 +73,54 @@ body header h1 span {
 	padding: 2px 6px 3px 4px;
 	border-radius: 4px;
 }
+body #container {
+	height: 100vh;
+	width: auto;
+	/* background: aliceblue; */
+	margin: 0;
+	padding: 20px;
+}
+body #container #chat-window {
+	background: #deeefb;
+	padding: 10px;
+	background-image: url(img/chat-bg.jpg);
+	background-size: cover;
+	background-position: center;
+}
+body #container #chat-window #output {
+	/* background: aliceblue; */
+}
+body #container input[type="text"] {
+	display: block;
+	margin: 5px auto;
+	padding: 5px;
+	border: 0;
+	border-bottom: 2px solid #b0bccc;
+	background: inherit;
+	width: 90%;
+}
+body #container #send {
+	background: dodgerblue;
+	color: ghostwhite;
+	text-align: center;
+	margin: 5px auto;
+	padding: 10px 20px;
+	border: 0;
+	border-radius: 4px;
+	font-weight: 700;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	cursor: pointer;
+	width: 45%;
+}
+
+/* resetting the strong tags */
+body strong {
+	font-weight: 700;
+	color: #fff;
+	background: #ef8b1c;
+	padding: 5px;
+	border-radius: 4px;
+}
+body #container #chat-window #output p {margin-top: 15px;}
